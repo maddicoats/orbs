@@ -1,6 +1,6 @@
 # orbs
 
-just a website with a bunch of orbs that you can move basically.
+just a react website with a bunch of orbs that you can move basically.
 
 <br>
 
