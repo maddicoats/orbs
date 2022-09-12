@@ -1,8 +1,60 @@
 .App {
   text-align: center;
-
+  font-family: 'Courier New', Courier, monospace;
 }
 
 html {
-  background-color:darkslategrey;
+  background-color:rgb(235, 235, 235);
+  animation: morphbg 30s infinite;
+}
+
+h1 {
+  letter-spacing: 8px ;
+  font-size: 35px;
+  animation: morph 3s infinite;
+}
+
+p {
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+  position: absolute;
+  text-align: right;
+}
+
+@keyframes slidein {
+  from {
+    margin-left:5%;
+    width:90%
+  }
+
+  to {
+    margin-left:5%;
+    width:15%;
+  }
+}
+
+@keyframes morph {
+  0% { color: #dfd3dd; }
+  12% { color: #ebce08; }
+  24% { color: #2beec6; }
+  36% { color: #0eee04; }
+  48% { color: #af00bf; }
+  60% { color: #9c0001; }
+  72% { color: #0c00c2; }
+  84% { color: #000000; }
+  100% { color: #dfd3dd; }
+}
+
+@keyframes morphbg {
+  0% { background-color: #dfd3dd; }
+  12% { background-color: #ebce08; }
+  24% { background-color: #2beec6; }
+  36% { background-color: #0eee04; }
+  48% { background-color: #af00bf; }
+  60% { background-color: #9c0001; }
+  72% { background-color: #0c00c2; }
+  84% { background-color: #000000; }
+  100% { background-color: #dfd3dd; }
 }

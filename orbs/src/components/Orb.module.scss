@@ -1,15 +1,13 @@
-    .Orb {
-        height: 150px;
-        // -webkit-user-drag: none;
-        // user-select: none;
-        // -moz-user-select: none;
-        // -webkit-user-select: none;
-        // -ms-user-select: none;
+.Orb {
+    height: 150px;
+    // transform: rotateZ(1000deg) infinite;
+    // transition: 9000ms;
 
-        &:hover {
-            //transform: rotateZ(2000deg);
-            //transition: 9000ms;
-            cursor: grab;
-        }
-
+    &:hover {
+        cursor: grab;
     }
+
+    &:active {
+        cursor: grabbing;
+    }
+}
