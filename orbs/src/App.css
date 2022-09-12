@@ -4,23 +4,33 @@
 }
 
 html {
-  background-color:rgb(235, 235, 235);
   animation: morphbg 30s infinite;
+  background-color: #026873;
+  /* https://projects.verou.me/css3patterns/#checkerboard */
+background-color: #eee;
+background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
+linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+background-size: 60px 60px;
+background-position: 0 0, 30px 30px;
 }
 
 h1 {
   letter-spacing: 8px ;
   font-size: 35px;
   animation: morph 3s infinite;
+  text-shadow: 2px 2px #000000;
 }
 
 p {
+  color: #f8f8f8;
+  font-weight: bold;
   animation-duration: 5s;
   animation-name: slidein;
   animation-iteration-count:infinite;
   animation-direction: alternate;
   position: absolute;
   text-align: right;
+  z-index: -1;
 }
 
 @keyframes slidein {
