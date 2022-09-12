@@ -2,7 +2,7 @@
 
 just a react website with a bunch of orbs that you can move basically.
 
-<img src="orbs/src/data/orbss.gif">
+<img src="orbs/src/data/orbss.gif" height=500>
 
 <br>
 
