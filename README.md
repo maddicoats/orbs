@@ -7,10 +7,13 @@ just a react website with a bunch of orbs that you can move basically.
 <br>
 
 ## things to fix:
-- orbs sometimes collide when dragged over each other
 - don't let the user drag them out of the original window size
+- adjust z-index so that the latest orb moved is on top
+- ~~orbs sometimes collide when dragged over each other~~ (added ternary to change z-index when orb is pressed)
+
+
 
 <br>
 
 ## links
-- [how to create a drag to move component in react](https://javascript.plainenglish.io/how-to-make-a-simple-custom-drag-to-move-component-in-react-f67d5c99f925)
+- [making a component draggable](https://stackoverflow.com/a/61667523/19610626)

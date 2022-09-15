@@ -9,7 +9,7 @@ const Orbs = () => {
     <div className={style.Orbs}>
         {orbs.map(orb => {
             return (
-                <Orb orb={orb} key={orb.id}/>
+                <Orb orb={orb} key={orb.id} />
             )
         })}
     </div>
