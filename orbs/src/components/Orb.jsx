@@ -1,10 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react'
 import style from './Orb.module.scss'
 
-const Orb = ({orb}) => {
+const Orb = ({orb, handleClicks, clicks}) => {
     const [pressed, setPressed] = useState(false)
     const [position, setPosition] = useState({x: 0, y: 0})
-    //const [zPos, setZPos] = useState(0)
+    const [zPos, setZPos] = useState(1)
     const ref = useRef()
 
 
@@ -26,20 +26,20 @@ const Orb = ({orb}) => {
             })
         }
     }
-
-         
+  
   return (
     <div ref={ ref }
       onMouseMove={ onMouseMove }
       onMouseDown={ () => {
         setPressed(true)
-        //setZPos(100)
-     }}
+        handleClicks()
+      }}
       onMouseUp={ () => {
         setPressed(false);
-    }}
-      style={{ zIndex: pressed ? 100 : 0 }} 
-      //style={{ zIndex: zPos }} 
+        setZPos(zPos + clicks)
+      }}
+      //onClick={}
+      style={{ zIndex: pressed ? 99999999 : zPos }} 
       >
         <img 
             className={style.Orb}
