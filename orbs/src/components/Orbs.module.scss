@@ -8,3 +8,82 @@
     //margin-top: 30%;
 
 }
+
+.Header {
+    font-family: 'Courier New', Courier, monospace;
+
+    h1 {
+        letter-spacing: 8px;
+        font-size: 35px;
+        animation: morph 3s infinite;
+        text-shadow: 2px 2px #000000;
+    }
+
+    p {
+        color: #f8f8f8;
+        font-weight: bold;
+        animation-duration: 5s;
+        animation-name: slidein;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        position: absolute;
+        text-align: right;
+        z-index: -1;
+
+    }
+}
+
+.Footer {
+    h3 {
+        text-align: center;
+        color: wheat;
+        background-color: brown;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+
+@keyframes slidein {
+    from {
+        margin-left: 5%;
+        width: 90%
+    }
+
+    to {
+        margin-left: 5%;
+        width: 15%;
+    }
+}
+
+@keyframes morph {
+    0% {
+        color: #0c00c2;
+    }
+
+    16% {
+        color: #ebce08;
+    }
+
+    32% {
+        color: #2beec6;
+    }
+
+    48% {
+        color: #0eee04;
+    }
+
+    64% {
+        color: #af00bf;
+    }
+
+    80% {
+        color: #9c0001;
+    }
+
+    100% {
+        color: #0c00c2;
+    }
+
+    /* 84% { color: #000000; }
+  100% { color: #dfd3dd; } */
+}

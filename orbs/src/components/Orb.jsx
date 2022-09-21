@@ -7,8 +7,6 @@ const Orb = ({orb, handleClicks, clicks}) => {
     const [zPos, setZPos] = useState(1)
     const ref = useRef()
 
-
-    
     // Monitor changes to position state and update DOM
     useEffect(() => {
         if (ref.current) {

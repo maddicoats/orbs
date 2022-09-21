@@ -1,14 +1,17 @@
 import './App.css';
 import Orbs from './components/Orbs';
+import { BrowserRouter, Routes, Route, NavLink, Link } from 'react-router-dom';
+import Wizard from './components/Wizard';
 
 function App() {
   
   return (
-    <div className="App">
-      <p>grab them</p>
-      <h1>orbs</h1>
-      <Orbs/>
-    </div>
+    <BrowserRouter>   
+      <Routes>
+        <Route path='/' element={<Orbs />} />
+        <Route path='/wizard' element={<Wizard />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

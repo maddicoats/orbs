@@ -1,70 +1,25 @@
-.App {
+html {
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
-}
-
-html {
-  animation: morphbg 30s infinite;
+  background-attachment: fixed;
+  /* animation: morphbg 30s infinite; */
   background-color: #026873;
   /* https://projects.verou.me/css3patterns/#checkerboard */
-background-color: #eee;
-background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
-linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+background-color: #dfd3dd;
+background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, #242424),
+linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, #242424);
 background-size: 60px 60px;
 background-position: 0 0, 30px 30px;
 }
 
-h1 {
-  letter-spacing: 8px ;
-  font-size: 35px;
-  animation: morph 3s infinite;
-  text-shadow: 2px 2px #000000;
-}
-
-p {
-  color: #f8f8f8;
-  font-weight: bold;
-  animation-duration: 5s;
-  animation-name: slidein;
-  animation-iteration-count:infinite;
-  animation-direction: alternate;
-  position: absolute;
-  text-align: right;
-  z-index: -1;
-}
-
-@keyframes slidein {
-  from {
-    margin-left:5%;
-    width:90%
-  }
-
-  to {
-    margin-left:5%;
-    width:15%;
-  }
-}
-
-@keyframes morph {
-  0% { color: #dfd3dd; }
-  12% { color: #ebce08; }
-  24% { color: #2beec6; }
-  36% { color: #0eee04; }
-  48% { color: #af00bf; }
-  60% { color: #9c0001; }
-  72% { color: #0c00c2; }
-  84% { color: #000000; }
-  100% { color: #dfd3dd; }
-}
-
 @keyframes morphbg {
   0% { background-color: #dfd3dd; }
-  12% { background-color: #ebce08; }
-  24% { background-color: #2beec6; }
-  36% { background-color: #0eee04; }
-  48% { background-color: #af00bf; }
-  60% { background-color: #9c0001; }
-  72% { background-color: #0c00c2; }
+  12% { background-color: #000000; }
+  24% { background-color: #000000; }
+  36% { background-color: #000000; }
+  48% { background-color: #000000; }
+  60% { background-color: #dfd3dd; }
+  72% { background-color: #000000; }
   84% { background-color: #000000; }
   100% { background-color: #dfd3dd; }
 }
